@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<title>Portfolio</title>
+<body>
+
+<h1>Portfolio</h1>
+<p>Have a look</p>
+<p>Fotografie</p>
+<img src="foto1_big.jpg">
+<img src="foto1">
+<img src="foto2">
+<img src="foto3">
+<img src="foto4">
+
+
+</body>
+</html>
