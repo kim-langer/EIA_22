@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html>
-<title>Portfolio Übung 2</title>
+<title>Portfolio Übung</title>
 <body>
 
 <h1>Portfolio</h1>
-<p>Have a look</p>
+<p>Have a look at our work</p>
 <p>Fotografie</p>
-<img src="foto1_big.jpg">
 <img src="foto1.jpg">
+<a href="Übung Unteraufgabe">
+  </a>
 <img src="foto2.jpg">
 <img src="foto3.jpg">
 <img src="foto4.jpg">
 <p>Grafikdesign</p>
-<img src="grafik1.jpg">
-<img src="grafik2.jpg">
-<img src="grafik3.jpg">
-
+<img src="grafik1.jpg" alt="Erstes Beispielprojekt" width="500" height="600">
+<img src="grafik2.jpg" alt="Zweites Beispielprojekt" width="500" height="600">
+<img src="grafik3.jpg" alt="Drittes Beispielprojekt" width="500" height="600">
+<img src="grafik4.jpg" alt="Viertes Beispielprojekt" width="500" height="600">
+<p>...und Animation</p>
+<img src="clip1.mp4">
+<img src="clip2.mp4">
+<img src="clip3.mp4">
+<img src="clip4.mp4">
 </body>
 </html>
