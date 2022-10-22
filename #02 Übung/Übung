@@ -1,14 +1,19 @@
+
+
 <!DOCTYPE html>
-<html>
-<title>Portfolio Übung</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
 <body>
 
-<h1>Portfolio</h1>
+  <h1>Portfolio</h1>
 <p>Have a look at our work</p>
 <p>Fotografie</p>
 <img src="foto1.jpg">
-<a href="Übung Unteraufgabe">
-  </a>
 <img src="foto2.jpg">
 <img src="foto3.jpg">
 <img src="foto4.jpg">
@@ -18,9 +23,10 @@
 <img src="grafik3.jpg" alt="Drittes Beispielprojekt" width="500" height="600">
 <img src="grafik4.jpg" alt="Viertes Beispielprojekt" width="500" height="600">
 <p>...und Animation</p>
-<img src="clip1.mp4">
-<img src="clip2.mp4">
-<img src="clip3.mp4">
-<img src="clip4.mp4">
+<video src="clip1.mp4">
+<video src="clip2.mp4">
+<video src="clip3.mp4">
+<video src="clip4.mp4">
+  
 </body>
 </html>
