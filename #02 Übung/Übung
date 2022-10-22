@@ -10,8 +10,8 @@
 <body>
 
   <h1>Portfolio</h1>
-<p>Have a look at our work</p>
-<h2>Fotografie</h2>
+<h2>Have a look at our work</h2>
+<h3>Fotografie</h3>
 <img src="foto1.jpg">
 <img src="foto2.jpg">
 <img src="foto3.jpg">
@@ -21,13 +21,13 @@
 <img src="grafik2.jpg">
 <img src="grafik3.jpg">
 <img src="grafik4.jpg">
-<h2>...und Animation</h2>
+<h3>...und Animation</h3>
   <video src="clip1.mp4"></video>
   <video src="clip2.mp4"></video>
   <video src="clip3.mp4"></video>
   <video src="clip4.mp4"></video>
 
-  <p>auch Sound können wir</p>
+  <p>noch eindrucksvoller mit dem richtigen Sound</p>
 <audio src="clip1.ogg"></audio>
 <audio src="clip2.ogg"></audio>
 <audio src="clip3.ogg"></audio>
