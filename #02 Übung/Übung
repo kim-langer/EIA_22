@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,6 +27,7 @@
   <video src="clip3.mp4"></video>
   <video src="clip4.mp4"></video>
 
+  <p>auch Sound können wir</p>
 <audio src="clip1.ogg"></audio>
 <audio src="clip2.ogg"></audio>
 <audio src="clip3.ogg"></audio>
