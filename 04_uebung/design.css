@@ -1,0 +1,23 @@
+body {background-image: url(./startbild.jpg width:400);}
+
+#header {
+    background: transparent url(img/logo.svg) no-repeat scroll right left;
+    height: 100px;
+    }
+
+
+    #navigation ul {
+        border: 1px solid #e7e7e7;
+        background-color: #f3f3f3;
+        position: absolute;
+        top: 10px;
+        right: 70px;
+      }
+    
+
+
+
+footer {background-color: #eaeaea
+
+    ;}
+
