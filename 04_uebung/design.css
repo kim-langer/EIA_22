@@ -1,9 +1,8 @@
-body {background-image: url(./startbild.jpg width:400);}
 
-#header {
-    background: transparent url(img/logo.svg) no-repeat scroll right left;
-    height: 100px;
-    }
+body {margin: 0;}
+    
+    header {background-color: beige
+    height: 90 px;}
 
 
     #navigation ul {
@@ -14,6 +13,8 @@ body {background-image: url(./startbild.jpg width:400);}
         right: 70px;
       }
     
+header {background-color: beige
+        height: 90 px;}
 
 
 
