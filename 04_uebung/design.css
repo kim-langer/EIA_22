@@ -1,15 +1,28 @@
 
 body {margin: 0;
 font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-background-color: dimgrey;
+background-color: rgb(63, 63, 63);
 color: white;
 text-align: center;}
 
 header {height: 400px;
 display: flex;
 justify-content: first baseline;
-align-items: center;
-background-image: url(bild-header.jpg);}
+align-items: flex-start;
+background-image: url(bild-header.png);}
+
+header a:hover {color: white;
+    text-decoration: underline;}
+
+.logo { 
+        background: url("./logo.svg") no-repeat; 
+        width: auto;
+        height: 25px;
+        margin-left: 10px;
+        margin-top: 10px;
+        display: block; 
+        text-indent: -9999px;
+}
 
 #image
         {
@@ -17,14 +30,27 @@ background-image: url(bild-header.jpg);}
         }
 
 .links {color: rgb(187, 177, 177);
-text-decoration: none;}
+text-decoration: none;
+margin-right: 15px;
+font-size: x-large;}
 
-     .navigation a:hover {color: white
-        text-decoration: underline;}
-
+.left{
+    text-align:left;
+    float:left;
+    }
+    .right{
+    float:right;
+    text-align:right;
+    }
+    .centered{
+    text-align:center;
+    }
        
-
-footer {background-color: #eaeaea
-
-    ;}
+.footer {background-color: #eaeaea;
+    position: absolute;
+  height: 300px;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.76);
+  text-align: center;
+}
 
