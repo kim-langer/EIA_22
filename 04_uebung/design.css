@@ -1,8 +1,9 @@
 
-body {margin: 0;}
+body {margin: 0;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
     
-    .header {background-color: beige
-    height: 90 px;
+    header a {background-color: rgb(61, 61, 20)
+    height: 100 px;
     text-decoration: none;}
 
 
