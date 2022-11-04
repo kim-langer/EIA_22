@@ -1,12 +1,28 @@
 
 body {margin: 0;
-font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
-    
-    header a {background-color: rgb(61, 61, 20)
-    height: 100 px;
-    text-decoration: none;}
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+background-color: dimgrey;
+color: white;
+text-align: center;}
 
+header {height: 400px;
+display: flex;
+justify-content: first baseline;
+align-items: center;
+background-image: url(bild-header.jpg);}
 
+#image
+        {
+            width: 100%;
+        }
+
+.links {color: rgb(187, 177, 177);
+text-decoration: none;}
+
+     .navigation a:hover {color: white
+        text-decoration: underline;}
+
+       
 
 footer {background-color: #eaeaea
 
