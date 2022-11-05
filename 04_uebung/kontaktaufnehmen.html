@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="design.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=+, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+<header> 
+    <a href="portfoliomitdesign.html"><img class="logo" src="logo.svg" alt="logo"></a>
+    <img id="image" src="./bild-header.png" alt="Headerbild Portfolio" height="400px">
+
+    <div class="container"> 
+    <a class="links" href="portfoliomitdesign.html">Home</a>
+    <a class="links" href="aboutme.html">About</a> 
+</div>
+
+</header>
 <body>
     
  <h1>Kontakt</h1>
@@ -14,10 +26,34 @@
  <p>info@kimlanger.de</p>
  <p>087652365810</p>
 
- <p><strong>Anfahrt</strong></p>
- <a href="https://www.google.com/maps/@48.055112,8.2121369,15z"> <p>Hier auf Google Maps öffnen</p></a>
+	
+ <div class="contactform">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  <br>
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
 
- <a href="aboutme.html"> <h3>About me</h3></a>
- <a href="uebung_03.html"> <h3>Zurück zur Startseite</h3></a>
+ <p><strong>Anfahrt</strong></p>
+ <a id="link"href="https://www.google.com/maps/@48.055112,8.2121369,15z"> <p>Hier auf Google Maps öffnen</p></a>
+ 
+
+
 </body>
 </html>
