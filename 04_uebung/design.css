@@ -22,20 +22,19 @@ header a:hover {color: white;
         margin-top: 10px;
         display: block; 
         text-indent: -9999px;
-        position: static;
+        position: absolute;
 }
 
 #image
         {
-            position:absolute;
+  
             width: 100%;
         }
 
 .links {color: rgb(187, 177, 177);
 text-decoration: none;
 margin-right: 15px;
-font-size: x-large;
-position:relative ;}
+font-size: x-large;}
 
 #link2 {color: rgb(145, 203, 227);}
 
