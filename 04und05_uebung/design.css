@@ -6,20 +6,54 @@ body {
   text-align: center;
 }
 
-.slideshow-container {
+header {
   height: 400px;
+  width: 100%;
+  background-attachment: fixed;
+  top: 0px;
+  right: 20px;
   display: flex;
-  justify-content: first baseline;
-  align-items: flex-start;
-  background-image: url(./bild-header.png);
+  justify-content: flex-end;
+
+  -webkit-animation: slide 18s ease infinite;
+  animation: slide 18s ease infinite;
 }
 
-.slideshow-container a:hover {
+
+header a:hover {
   color: white;
   text-decoration: underline;
 }
 
-header img {
+
+@-webkit-keyframes slide {
+  0% {
+      background-image: url(slide1.jpg);
+  }
+
+  10% {
+      background-image: url(slide1.jpg);
+  }
+
+  20% {
+      background-image: url(slide2.jpg);
+  }
+
+  50% {
+      background-image: url(slide2.jpg);
+  }
+
+  60% {
+      background-image: url(slide3.jpg);
+  }
+
+  90% {
+      background-image: url(slide4.jpg);
+  }
+
+  100% {
+      background-image: url(slide4.jpg);
+  }
 
 }
 
@@ -39,10 +73,12 @@ header img {
 }
 
 .links {
-  color: rgb(187, 177, 177);
+  color: rgb(0, 0, 0);
   text-decoration: none;
-  margin-right: 15px;
   font-size: x-large;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
 }
 
 #link2 {
@@ -151,6 +187,6 @@ input[type="submit"]:hover {
 
 .picsize img:hover {
   -ms-transform: scale(1.1); 
-  -webkit-transform: scle(1.1); 
+  -webkit-transform: scale(1.1); 
   transform: scale(1.1);
 }
