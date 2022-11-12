@@ -73,7 +73,7 @@ header a:hover {
 }
 
 .links {
-  color: rgb(0, 0, 0);
+  color: rgb(63, 63, 63);
   text-decoration: none;
   font-size: x-large;
   display: flex;
@@ -83,6 +83,16 @@ header a:hover {
 
 #link2 {
   color: rgb(145, 203, 227);
+}
+
+.picsize:hover img {
+  opacity: 0.5;
+}
+
+.picsize img:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out 0s;
+  opacity: 1;
 }
 
 .button {
@@ -185,8 +195,23 @@ input[type="submit"]:hover {
   opacity: 1;
 }
 
-.picsize img:hover {
-  -ms-transform: scale(1.1); 
-  -webkit-transform: scale(1.1); 
-  transform: scale(1.1);
+
+.textstyle {font-family: 'Quicksand';
+margin-bottom: 0px;
+font-style: italic;
+font-size: xx-large;}
+
+.banner {
+  font-size: 20px;
+  position: fixed;
+  cursor: pointer;
+  padding: 0,5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-weight: 300;
+  margin-top: 30px; 
+  background-color: rgb(0, 89, 255);
+  color: white;
 }
+
+.portfoliotext {font-size: 50px;}
