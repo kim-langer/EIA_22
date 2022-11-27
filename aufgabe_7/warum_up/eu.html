@@ -7,13 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Carbon Dioxide Emissions</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script defer src="aufgabe.js"></script> 
 </head>
 
 <body>
     <nav>
         <div class="row">
-            <div class="wrapper" id="deutschlandimg">
+            <div class="wrapper">
                 <img src="images/germany.png" height="76px" class="germany">
                 <h5>Deutschland</h5>
             </div>
@@ -21,7 +20,7 @@
                 <img src="images/austria.png" height="76px" class="austria">
                 <h5>Österreich</h5>
             </div>
-            <div class="wrapper" id="belgienimg">
+            <div class="wrapper">
                 <img src="images/belgium.png" height="76px" class="belgium">
                 <h5>Belgien</h5>
             </div>
@@ -55,7 +54,7 @@
                 <img src="images/finland.png" height="76px" class="finland">
                 <h5>Finnland</h5>
             </div>
-            <div class="wrapper active" id="frankreichimg">
+            <div class="wrapper active">
                 <img src="images/france.png" height="76px" class="france">
                 <h5>Frankreich</h5>
             </div>
@@ -71,7 +70,7 @@
                 <img src="images/ireland.png" height="76px" class="ireland">
                 <h5>Irland</h5>
             </div>
-            <div class="wrapper" id="italienimg">
+            <div class="wrapper">
                 <img src="images/italy.png" height="76px" class="italy">
                 <h5>Italien</h5>
             </div>
@@ -127,30 +126,37 @@
             </div>
         </div>
     </nav>
-
-    <img src="images/eu_stars.png" class="stars">
-    <h1 class="ueberschrift">
-        Einwohnerzahl in der europäischen Union
-    </h1>
-
     <main>
+        <div class="chartStarWrapper">
+            <img src="images/eu_stars.png" class="stars">
+            
+            <div class="chartWrapper">
+                <div class="chart"></div>
+            </div>
+
+        </div>
+        
+        <h1>
+            Einwohnerzahl in der europäischen Union
+        </h1>
+        
         <section>
-            <h2 class="Einwohnerzahl">65,48Mio</h2>
-            <p id="Landtausch">Gesamtzahl Einwohnerinnen und Einwohner in Frankreich in 2022</p>
+            <h2>65,48Mio</h2>
+            <p>Gesamtzahl Einwohnerinnen und Einwohner in Frankreich in 2022</p>
         </section>
 
         <section>
-            <h2 class="Prozentrelativ">14%</h2>
+            <h2>14%</h2>
             <p>Relativ zur Gesamtzahl in der EU</p>
         </section>
 
         <section>
-            <h2 class="Wachstumsraterelativ">5,1%</h2>
+            <h2>5,1%</h2>
             <p>Wachstumsrate seit 2008</p>
         </section>
 
         <section>
-            <h2 class="Wachstumsrategesamt">3,34Mio</h2>
+            <h2>3,34Mio</h2>
             <p>Wachstumsrate gesamt zwischen 2008 and 2022</p>
         </section>
     </main>
