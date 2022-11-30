@@ -30,24 +30,24 @@ let resultBWachsges= (B2022 - B2012)
 
 function Klicken(land: string, Einwohnerzahl: number, vergleichswert: number, wachstumsrate: number, wachstumsrategesamt: number, tausch: string)
 { 
-    const ueberschrift = document.querySelector ('.Einwohner') as HTMLHeadingElement
-    ueberschrift.innerHTML = Einwohnerzahl + 'Mio'
+    const ueberschrift = document.querySelector ('.ueberschrift') as HTMLHeadingElement
+    ueberschrift.innerHTML = "Einwohnerzahl in " + land
 
-    const Einwohner = document.querySelector ('.Einwohnerzahl') as HTMLHeadingElement
+    const Einwohner = document.querySelector ('.einwohnerzahl') as HTMLHeadingElement
     Einwohner.innerHTML = Einwohnerzahl + 'Mio'
 
-    const Prozent = document.querySelector ('.Prozentrelativ') as HTMLHeadingElement
+    const Prozent = document.querySelector ('.prozentrelativ') as HTMLHeadingElement
     Prozent.innerHTML = vergleichswert + ' %'
 
-    const wachstumsraterel = document.querySelector ('.Wachstumsraterelativ') as HTMLHeadingElement
+    const wachstumsraterel = document.querySelector ('.wachstumsraterelativ') as HTMLHeadingElement
     wachstumsraterel.innerHTML = wachstumsrate + ' %'
 
-    const gesamterWachstum = document.querySelector ('.Wachstumsrategesamt') as HTMLHeadingElement
+    const gesamterWachstum = document.querySelector ('.wachstumsrategesamt') as HTMLHeadingElement
     gesamterWachstum.innerHTML = wachstumsrategesamt + ' %'
 
-    const landwechsel = document.querySelector ('.Landtausch') as HTMLHeadingElement
+    const landwechsel = document.querySelector ('.landtausch') as HTMLHeadingElement
     landwechsel.innerHTML = 'Gesamtzahl der Einwohner und Einwohnerinnen in' + tausch + 'in 2021'
-};
+}
 
 const deutschlandimg = document.querySelector ('#deutschlandimg') as HTMLImageElement
 deutschlandimg.addEventListener ('click', function () { Klicken("Deutschland", D2022, resultD, resultDWachs, resultDWachsges, "Deutschland")} );

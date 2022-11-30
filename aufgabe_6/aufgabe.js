@@ -20,20 +20,19 @@ let resultB = (B2022 / EU2022) * 100;
 let resultBWachs = ((B2022 - B2012) / B2012 * 100);
 let resultBWachsges = (B2022 - B2012);
 function Klicken(land, Einwohnerzahl, vergleichswert, wachstumsrate, wachstumsrategesamt, tausch) {
-    const ueberschrift = document.querySelector('.Einwohner');
-    ueberschrift.innerHTML = Einwohnerzahl + 'Mio';
-    const Einwohner = document.querySelector('.Einwohnerzahl');
+    const ueberschrift = document.querySelector('.ueberschrift');
+    ueberschrift.innerHTML = "Einwohnerzahl in " + land;
+    const Einwohner = document.querySelector('.einwohnerzahl');
     Einwohner.innerHTML = Einwohnerzahl + 'Mio';
-    const Prozent = document.querySelector('.Prozentrelativ');
+    const Prozent = document.querySelector('.prozentrelativ');
     Prozent.innerHTML = vergleichswert + ' %';
-    const wachstumsraterel = document.querySelector('.Wachstumsraterelativ');
+    const wachstumsraterel = document.querySelector('.wachstumsraterelativ');
     wachstumsraterel.innerHTML = wachstumsrate + ' %';
-    const gesamterWachstum = document.querySelector('.Wachstumsrategesamt');
+    const gesamterWachstum = document.querySelector('.wachstumsrategesamt');
     gesamterWachstum.innerHTML = wachstumsrategesamt + ' %';
-    const landwechsel = document.querySelector('.Landtausch');
+    const landwechsel = document.querySelector('.landtausch');
     landwechsel.innerHTML = 'Gesamtzahl der Einwohner und Einwohnerinnen in' + tausch + 'in 2021';
 }
-;
 const deutschlandimg = document.querySelector('#deutschlandimg');
 deutschlandimg.addEventListener('click', function () { Klicken("Deutschland", D2022, resultD, resultDWachs, resultDWachsges, "Deutschland"); });
 const frankreichimg = document.querySelector('#frankreichimg');
