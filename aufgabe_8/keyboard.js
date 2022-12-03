@@ -49,11 +49,17 @@ let taste12 = document.querySelector("#taste12");
 taste12.addEventListener('click', function () {
     playsample(new Audio("gf.mp3"));
 });
-let tonfolge = document.querySelector("#playallsounds");
-tonfolge.addEventListener('click', function () {
-    playsample(new Audio("gf.mp3"));
+function playsampleplaybutton(ton2, ton3, ton4, ton5, ton6) {
+    ton2.play();
+    ton3.play();
+    ton4.play();
+    ton5.play();
+    ton6.play();
+}
+let playbuttonactive = document.querySelector("#playallsounds");
+playbuttonactive.addEventListener('click', function () {
+    playsampleplaybutton;
 });
-setInterval(function () {
-    tonfolge;
-}, 500);
+let tonfolge = [new Audio("ef.mp3"), new Audio("e.mp3"), new Audio("df.mp3"), new Audio("df.mp3"), new Audio("af.mp3")];
+setInterval(function () { playsampleplaybutton(tonfolge[1], tonfolge[2], tonfolge[3], tonfolge[4], tonfolge[5]); }, 500);
 //# sourceMappingURL=keyboard.js.map
