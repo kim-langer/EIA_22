@@ -56,10 +56,10 @@ function playsampleplaybutton(ton2, ton3, ton4, ton5, ton6) {
     ton5.play();
     ton6.play();
 }
-let playbuttonactive = document.querySelector("#playallsounds");
-playbuttonactive.addEventListener('click', function () {
+let playbutton = document.querySelector("#playallsounds");
+playbutton.addEventListener('click', function () {
     playsampleplaybutton;
 });
 let tonfolge = [new Audio("ef.mp3"), new Audio("e.mp3"), new Audio("df.mp3"), new Audio("df.mp3"), new Audio("af.mp3")];
-setInterval(function () { playsampleplaybutton(tonfolge[1], tonfolge[2], tonfolge[3], tonfolge[4], tonfolge[5]); }, 500);
+setInterval(function () { playsampleplaybutton(tonfolge[1], tonfolge[2], tonfolge[3], tonfolge[4], tonfolge[5]); }, 1000);
 //# sourceMappingURL=keyboard.js.map
