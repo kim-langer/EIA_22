@@ -65,14 +65,12 @@ taste12.addEventListener ('click', function (){
 })
 
 
+let tonfolge:any [] = [(new Audio("ef.mp3")), (new Audio("e.mp3")), (new Audio("df.mp3")), (new Audio("df.mp3")), (new Audio("af.mp3"))]
+
 function playsampleplaybutton (sound1: any, sound2:any, sound3:any, sound4:any)
 { 
     setInterval(sound1= tonfolge[1], sound2=tonfolge [2], sound3=tonfolge [3], sound4=tonfolge [4], 1000)
 };
 
-let tonfolge:any [] = [(new Audio("ef.mp3")), (new Audio("e.mp3")), (new Audio("df.mp3")), (new Audio("df.mp3")), (new Audio("af.mp3"))]
-
-let tonfolgeplay:any [] = [tonfolge [1], tonfolge [2], tonfolge [3], tonfolge [4]]
-
-let playbutton = document.querySelector (".playallsounds") as HTMLAudioElement
-playbutton.addEventListener ('click', function (): {playsampleplaybutton})
+let playbutton = document.querySelector (".playallsounds")
+playbutton.addEventListener ('click', function () {playsampleplaybutton})
