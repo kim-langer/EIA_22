@@ -75,6 +75,6 @@ playbutton.addEventListener ('click', function () {
     i++
     if (i==4) { i = 0 }
 
-}, 1000);
+}, 1000)});
 
 var i= 0

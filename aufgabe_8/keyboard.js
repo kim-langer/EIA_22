@@ -59,6 +59,6 @@ playbutton.addEventListener('click', function () {
             i = 0;
         }
     }, 1000);
-    var i = 0;
 });
+var i = 0;
 //# sourceMappingURL=keyboard.js.map
