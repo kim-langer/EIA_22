@@ -49,11 +49,16 @@ let taste12 = document.querySelector("#taste12");
 taste12.addEventListener('click', function () {
     playsample(new Audio("gf.mp3"));
 });
-let tonfolge = [(new Audio("ef.mp3")), (new Audio("e.mp3")), (new Audio("df.mp3")), (new Audio("df.mp3")), (new Audio("af.mp3"))];
-function playsampleplaybutton(sound1, sound2, sound3, sound4) {
-    setInterval(sound1 = tonfolge[1], sound2 = tonfolge[2], sound3 = tonfolge[3], sound4 = tonfolge[4], 1000);
-}
-;
-let playbutton = document.querySelector(".playallsounds");
-playbutton.addEventListener('click', function () { playsampleplaybutton; });
+let tonfolge = ["ef.mp3", "e.mp3", "df.mp3", "df.mp3", "af.mp3"];
+let playbutton = document.querySelector(".playbutton");
+playbutton.addEventListener('click', function () {
+    setInterval(function () {
+        playsample(new Audio(tonfolge[i]));
+        i++;
+        if (i == 4) {
+            i = 0;
+        }
+    }, 1000);
+    var i = 0;
+});
 //# sourceMappingURL=keyboard.js.map
