@@ -1,0 +1,123 @@
+body {
+    background-color: rgb(134, 133, 133);
+  }
+
+.playbutton {
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 35px;
+    margin-left: 50%;
+}
+
+.position {
+    display: flex;
+    justify-content: center;
+}
+
+#taste1 {width: 100px;
+    height: 430px;
+    margin-top: 100px;
+    margin-right: 0px;
+    border-color: black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#taste2 {width: 60px;
+    height: 430px;
+    margin-top: 100px;
+    margin-left: -6px;
+    border-color: black;
+    border-radius: 10px;
+    background-color: black;
+}
+
+#taste3 {width: 100px;
+    height: 430px;
+    margin-top: 100px;
+    margin-left: -6px;
+    border-color: black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#taste4 {width: 60px;
+    height: 430px;
+    margin-top: 100px;
+    margin-left: -6px;
+    border-color: black;
+    border-radius: 10px;
+    background-color: black;
+}
+
+#taste5 {width: 100px;
+    height: 430px;
+    margin-top: 100px;
+    margin-left: -6px;
+    border-color: black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#taste6 {width: 100px;
+    height: 430px;
+    margin-top: 100px;
+    margin-left: -6px;
+    border-color: black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#taste7 {width: 60px;
+    height: 430px;
+    margin-top: 100px;
+    margin-left: -6px;
+    border-color: black;
+    border-radius: 10px;
+    background-color: black;
+}
+
+#taste8 {width: 100px;
+    height: 430px;
+    margin-top: 100px;
+    margin-left: -6px;
+    border-color: black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#taste9 {width: 60px;
+    height: 430px;
+    margin-top: 100px;
+    margin-left: -6px;
+    border-color: black;
+    border-radius: 10px;
+    background-color: black;
+}
+
+#taste10 {width: 100px;
+    height: 430px;
+    margin-top: 100px;
+    margin-left: -6px;
+    border-color: black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#taste11 {width: 60px;
+    height: 430px;
+    margin-top: 100px;
+    margin-left: -6px;
+    border-color: black;
+    border-radius: 10px;
+    background-color: black;
+}
+
+#taste12 {width: 100px;
+    height: 430px;
+    margin-top: 100px;
+    margin-left: -6px;
+    border-color: black;
+    border-radius: 10px;
+    background-color: white;
+}
