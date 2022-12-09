@@ -68,7 +68,7 @@ taste12.addEventListener ('click', function (){
 let tonfolge = ["ef.mp3", "e.mp3", "df.mp3","df.mp3", "af.mp3"]
 
 
-let playbutton = document.querySelector (".playbutton") as HTMLImageElement
+let playbutton = document.querySelector (".playbutton") as HTMLDivElement
 playbutton.addEventListener ('click', function () {
     setInterval (function () {playsample(new Audio(tonfolge[i]))
 

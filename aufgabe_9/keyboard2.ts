@@ -1,5 +1,5 @@
 
-function playsample (ton: any)
+function playsample (ton: HTMLAudioElement)
 { 
     ton.play(); 
 }
@@ -67,8 +67,7 @@ taste12.addEventListener ('click', function (){
 
 let tonfolge = ["ef.mp3", "e.mp3", "df.mp3","df.mp3", "af.mp3"]
 
-
-let playbutton = document.querySelector (".playbutton") as HTMLImageElement
+let playbutton = document.querySelector (".playbutton") 
 playbutton.addEventListener ('click', function () {
     setInterval (function () {playsample(new Audio(tonfolge[i]))
 
@@ -77,4 +76,28 @@ playbutton.addEventListener ('click', function () {
 
 }, 1000)});
 
-var i= 0
+
+let i= 0
+let zaehler= 0
+let beatremix;
+let interval;
+
+function playStop () {
+
+    if (document.querySelector("playbutton").classList.contains ("fa-regular fa-circle-play")) {
+
+        document.querySelector("playbutton").classList.remove ("fa-regular fa-circle-play");
+        document.querySelector("playbutton").classList.add ("fa-regular fa-circle-pause");
+        clearInterval (interval);
+    }
+}
+
+function remix () 
+document.querySelector ('#remix').addEventListener ('click', function () {
+   
+    setInterval (function () {playsample(tonfolge[zaehler]);
+        zaehler= Math.floor (Math.random() * 9 );}, 1000);
+    });
+
+    
+   

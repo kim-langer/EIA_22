@@ -3,10 +3,9 @@ body {
   }
 
 .playbutton {
-    position: relative;
-    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
     margin-top: 35px;
-    margin-left: 50%;
 }
 
 .position {
@@ -120,4 +119,10 @@ body {
     border-color: black;
     border-radius: 10px;
     background-color: white;
+}
+
+.remix {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
 }
