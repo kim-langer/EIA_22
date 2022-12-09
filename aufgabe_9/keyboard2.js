@@ -65,16 +65,18 @@ let zaehler = 0;
 let beatremix;
 let interval;
 function playStop() {
-    if (document.querySelector("playbutton").classList.contains("fa-regular fa-circle-play")) {
-        document.querySelector("playbutton").classList.remove("fa-regular fa-circle-play");
-        document.querySelector("playbutton").classList.add("fa-regular fa-circle-pause");
-        clearInterval(interval);
+    if (document.querySelector(".playbutton").classList.contains("fa-regular fa-circle-play")) {
+        document.querySelector(".playbutton").classList.remove("fa-regular fa-circle-play");
+        document.querySelector(".playbutton").classList.add("fa-regular fa-circle-pause");
+        clearInterval(tonfolge.pause);
     }
 }
-document.querySelector('#remix').addEventListener('click', function () {
-    setInterval(function () {
-        playsample(tonfolge[zaehler]);
-        zaehler = Math.floor(Math.random() * 9);
-    }, 1000);
-});
+function remix() {
+    document.querySelector('.remix').addEventListener('click', function () {
+        setInterval(function () {
+            playsample(tonfolge[zaehler]);
+            zaehler = Math.floor(Math.random() * 9);
+        }, 1000);
+    });
+}
 //# sourceMappingURL=keyboard2.js.map
