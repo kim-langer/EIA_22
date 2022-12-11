@@ -1,4 +1,4 @@
-
+namespace aufgabe {
 function playsample (ton: any)
 { 
     ton.play(); 
@@ -69,7 +69,7 @@ let tonfolge = ["ef.mp3", "e.mp3", "df.mp3","df.mp3", "af.mp3"]
 
 let playbutton = document.querySelector (".playbutton") 
 playbutton.addEventListener ('click', function () {
-    setInterval (function () {playsample(new Audio(tonfolge[i]))
+     setInterval (function () {playsample(new Audio(tonfolge[i]))
 
     i++
     if (i==4) { i = 0 }
@@ -88,7 +88,8 @@ function playStop () {
 
         document.querySelector(".playbutton").classList.remove ("fa-regular fa-circle-play");
         document.querySelector(".playbutton").classList.add ("fa-regular fa-circle-pause");
-        clearInterval (tonfolge.pause);
+        clearInterval (tonfolge.pause)
+        tonfolge = []
     }
 }
 
@@ -98,6 +99,6 @@ function remix ()
     setInterval (function () {playsample(tonfolge[zaehler]);
         zaehler= Math.floor (Math.random() * 9 );}, 1000);
     });}
-
     
-   
+}
+
