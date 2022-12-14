@@ -67,38 +67,64 @@ taste12.addEventListener ('click', function (){
 
 let tonfolge = ["ef.mp3", "e.mp3", "df.mp3","df.mp3", "af.mp3"]
 
-let playbutton = document.querySelector (".playbutton") 
-playbutton.addEventListener ('click', function () {
-     setInterval (function () {playsample(new Audio(tonfolge[i]))
+let i= 0
+let intervalID;
+
+let start:any = document.querySelector(".start") as HTMLImageElement;
+let pause:any = document.querySelector (".pause")as HTMLImageElement;
+
+start.addEventListener ('click', function () {
+     intervalID = setInterval (function () {playsample(new Audio(tonfolge[i]))
 
     i++
     if (i==4) { i = 0 }
 
 }, 1000)});
 
+pause.addEventListener ('click', function () {
+     clearInterval(intervalID);
+    }); 
 
-let i= 0
-let zaehler= 0
-let beatremix;
-let interval;
 
-function playStop () {
-
-    if (document.querySelector(".playbutton").classList.contains ("fa-regular fa-circle-play")) {
-
-        document.querySelector(".playbutton").classList.remove ("fa-regular fa-circle-play");
-        document.querySelector(".playbutton").classList.add ("fa-regular fa-circle-pause");
-        clearInterval (tonfolge.pause)
-        tonfolge = []
+    function switchbutton(): void{
+        if (start.style.visibility == "hidden")
+        {
+            start.style.visibility = "visible";
+            pause.style.visibility = "hidden";
+        }
+        else{
+            start.style.visibility = "hidden";
+            pause.style.visibility = "visible";
+        }
     }
-}
-
-function remix () 
-{document.querySelector ('.remix').addEventListener ('click', function () {
-   
-    setInterval (function () {playsample(tonfolge[zaehler]);
-        zaehler= Math.floor (Math.random() * 9 );}, 1000);
-    });}
+    function switchbuttonstop(): void{
+        if (start.style.visibility == "visible")
+        {
+            start.style.visibility = "visible";
+            pause.style.visibility = "hidden";
+        }
+        else{
+            start.style.visibility = "hidden";
+            pause.style.visibility = "visible";
+        }
     
-}
+    }
 
+    document.querySelector(".fa-circle-play").addEventListener("click", function(): void {switchbutton();});
+    document.querySelector(".fa-circle-pause").addEventListener("click", function(): void {switchbuttonstop();});  
+    
+
+let remix = document.querySelector ('.remix')  as HTMLImageElement
+remix.addEventListener ('click', function playsample () {
+   for (let i = tonfolge.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() + (i + 1));
+    let temporary = tonfolge [j]
+    tonfolge [j] = tonfolge [i]
+    tonfolge [i] = temporary
+   } 
+})
+
+document.querySelector(".fa-circle-play").addEventListener("click", function(): void {switchbutton();});
+document.querySelector(".fa-circle-pause").addEventListener("click", function(): void {switchbuttonstop();});
+
+}

@@ -126,3 +126,11 @@ body {
     justify-content: center;
     margin-top: 18px;
 }
+
+.fa-regular:hover{
+    transform:scale(1.1);
+}
+
+.remix:hover{
+    transform:scale(1.1);
+}
