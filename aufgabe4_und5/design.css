@@ -169,11 +169,7 @@ input[type="submit"]:hover {
 .contactform {
   border-radius: 5px;
   background-color: rgb(63, 63, 63);
-  padding: 20px;
-}
 
-#request {
-  color: rgb(159, 250, 179);
 }
 
 .layout {

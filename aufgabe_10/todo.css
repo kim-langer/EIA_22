@@ -1,0 +1,46 @@
+body {
+  background-color: rgb(208, 207, 204);
+}
+
+#ueberschrift {
+  display: flex;
+  justify-content: center;
+  color: black;
+  margin-top: 50px;
+  font-size: 70px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input[type="text"],
+select {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: -1px;
+  resize: vertical;
+  padding-left: 40px;
+}
+
+div {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: -1px;
+  resize: vertical;
+  padding-left: 40px;
+
+}
+
+.eingabefeld {
+  border-radius: 5px;
+}
+
+.tickbox {
+  height: 4px;
+  width: 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
