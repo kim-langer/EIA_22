@@ -1,34 +1,50 @@
 
 const wrapper = document.querySelector(".innerwrapper")
-let tickbox = document.querySelector(".tickbox")
+let tasksNumber: number = 0;
+let trashicon = document.querySelector ("fa-regular fa-trash-can")
 
-let eingabetext = document.querySelector(".text") as HTMLInputElement
-eingabetext.addEventListener("keydown", function (event: KeyboardEvent) {
+let newtask = document.querySelector(".text") as HTMLInputElement
+newtask.addEventListener("keydown", function addnewtask(event: KeyboardEvent) {
     if (event.key == "Enter") {
 
-        let newelement = document.createElement("div");
-        newelement.textContent = eingabetext.value
+        let newelement = document.createElement("div") as HTMLDivElement
+        newelement.textContent = newtask.value;
+        newelement.className = "addnewtask"
 
-        let checkbox = document.createElement ("input") 
+        let checkbox = document.createElement("input")
         checkbox.type = "checkbox"
         newelement.appendChild(checkbox)
 
+        let trash: HTMLElement = document.createElement("i");
+        trash.className = "fa-regular fa-trash-can"
+        newelement.appendChild(trash)
 
-        let trash = document.createElement ("element") 
-        trash.type = "element"
-        newelement.appendChild(checkbox)
-    
         document.body.appendChild(newelement);
         
+
     }
 
 })
 
 
+function deleteTask(div: HTMLDivElement): void {
+    div.remove();
+
+    tasksNumber--;
+    tasksAnzahl();}
 
 
-let createcircle = document.querySelector("eingabetext")
-createcircle.addEventListener("click", function () {
-    document.classList.add('tickbox')
+    trashicon.addEventListener("click", function (event: MouseEvent): void {
+        console.log(event);
+        deleteTask(newelement);
+        
+    });
+
+    tasksNumber++;
+    tasksAnzahl();
 }
-)
+
+function tasksAnzahl(): void {
+    document.getElementById("counter").innerText = tasksNumber + " in total";
+}
+
