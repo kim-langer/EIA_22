@@ -1,7 +1,10 @@
 
 const wrapper = document.querySelector(".innerwrapper")
 let tasksNumber: number = 0;
-let trashicon = document.querySelector ("fa-regular fa-trash-can")
+
+function tasksAnzahl(): void {
+    document.getElementById("counter").innerText = tasksNumber + " in total";
+}
 
 let newtask = document.querySelector(".text") as HTMLInputElement
 newtask.addEventListener("keydown", function addnewtask(event: KeyboardEvent) {
@@ -20,31 +23,17 @@ newtask.addEventListener("keydown", function addnewtask(event: KeyboardEvent) {
         newelement.appendChild(trash)
 
         document.body.appendChild(newelement);
-        
+
+        tasksNumber++;
+        tasksAnzahl();
 
     }
 
 })
 
-
-function deleteTask(div: HTMLDivElement): void {
-    div.remove();
-
-    tasksNumber--;
-    tasksAnzahl();}
-
-
-    trashicon.addEventListener("click", function (event: MouseEvent): void {
-        console.log(event);
-        deleteTask(newelement);
-        
+let trashicon = document.querySelector("fa-regular fa-trash-can");
+trashicon.addEventListener("click", function deleteTask () {
+        newtask.remove;
+        tasksNumber--;
+        tasksAnzahl();
     });
-
-    tasksNumber++;
-    tasksAnzahl();
-}
-
-function tasksAnzahl(): void {
-    document.getElementById("counter").innerText = tasksNumber + " in total";
-}
-
