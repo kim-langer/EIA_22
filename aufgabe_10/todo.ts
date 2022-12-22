@@ -19,6 +19,12 @@ newtask.addEventListener("keydown", function addnewtask(event: KeyboardEvent) {
         newelement.appendChild(checkbox)
 
         let trash: HTMLElement = document.createElement("i");
+        trash.addEventListener("click", function () {
+            newelement.remove();
+            tasksNumber--;
+            tasksAnzahl();
+        });
+        
         trash.className = "fa-regular fa-trash-can"
         newelement.appendChild(trash)
 
@@ -31,9 +37,4 @@ newtask.addEventListener("keydown", function addnewtask(event: KeyboardEvent) {
 
 })
 
-let trashicon = document.querySelector("fa-regular fa-trash-can");
-trashicon.addEventListener("click", function deleteTask () {
-        newtask.remove;
-        tasksNumber--;
-        tasksAnzahl();
-    });
+let trash = document.querySelector("fa-regular fa-trash-can");

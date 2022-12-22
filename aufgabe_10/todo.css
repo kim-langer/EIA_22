@@ -15,7 +15,7 @@ input[type=checkbox] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  position: static; 
+  position: relative; 
   background-color: #fff;
   color: #000;
   height: 25px;
@@ -28,16 +28,18 @@ input[type=checkbox] {
 
 input[type=checkbox]:checked::before {
   position: absolute;
+  transform: rotate(40deg);
   font-size: 20px;
   left: 5px;
   top: 0;
   font-weight: 700;
   content: '\02143';
-  transform: rotate(40deg);
+
 }
 
 input[type="text"],
 select {
+
   width: 50%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -51,7 +53,7 @@ select {
 }
 
 .addnewtask {
-  width: 357px;
+  width: 320px;
   height: 22px;
   padding: 12px;
   border: 1px solid #ccc;
@@ -64,7 +66,7 @@ select {
   background-color: white;
   display: flex;
   justify-content: flex-start;
-  margin-left: 501px;
+  margin-left: 450px;
   box-shadow: 10px 10px 15px silver;
   font-size: 15px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -80,7 +82,7 @@ div {
   margin-bottom: -1px;
   resize: vertical;
   padding-left: 45px;
-  margin-left: 450px;
+  margin-left: 400px;
 }
 
 .eingabefeld {

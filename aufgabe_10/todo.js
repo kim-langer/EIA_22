@@ -13,6 +13,11 @@ newtask.addEventListener("keydown", function addnewtask(event) {
         checkbox.type = "checkbox";
         newelement.appendChild(checkbox);
         let trash = document.createElement("i");
+        trash.addEventListener("click", function () {
+            newelement.remove();
+            tasksNumber--;
+            tasksAnzahl();
+        });
         trash.className = "fa-regular fa-trash-can";
         newelement.appendChild(trash);
         document.body.appendChild(newelement);
@@ -20,10 +25,5 @@ newtask.addEventListener("keydown", function addnewtask(event) {
         tasksAnzahl();
     }
 });
-let trashicon = document.querySelector("fa-regular fa-trash-can");
-trashicon.addEventListener("click", function deleteTask() {
-    newtask.remove;
-    tasksNumber--;
-    tasksAnzahl();
-});
+let trash = document.querySelector("fa-regular fa-trash-can");
 //# sourceMappingURL=todo.js.map
