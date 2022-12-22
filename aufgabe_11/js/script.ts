@@ -1,7 +1,3 @@
-var todosText: string[] =       ["Lorem" , "Ipsum" , "Dolor", "hallo"];
-var todosChecked: boolean[] =    [true    , false   , false];
-
-
 interface ToDo {
 
     toDosText: string;
@@ -16,13 +12,14 @@ let objects: ToDo[] = [
 ];
 
 let addButton = document.querySelector("#addButton") as HTMLButtonElement
+console.log(addButton);
+
 addButton.addEventListener ("click", function (): void {
     var temp = { toDosText: inputDOMElement.value, 
     todosChecked: false,};
-    objects.push(temp);
+    objects.unshift(temp);
 }
 ); 
-
 
 var inputDOMElement: HTMLInputElement;
 var addButtonDOMElement: HTMLElement;
@@ -50,7 +47,7 @@ function drawListToDOM(): void {
     todosDOMElement.innerHTML = "";
 
     // das ToDo-Array durchlaufen (iterieren) und Todo für Todo in den DOM schreiben
-    for (let index: number = 0; index < todosText.length; index++) {
+    for (let index: number = 0; index < objects.length; index++) {
 
         /**
          * Neues DIV-Element erstellen (würde auch mit innerHTML = "<div class='todo'></div>" gehen, 
@@ -59,8 +56,8 @@ function drawListToDOM(): void {
         let todo: HTMLElement = document.createElement("div");
         todo.classList.add("todo");
 
-        todo.innerHTML =  "<span class='check " + todosChecked[index] + "'><i class='fas fa-check'></i></span>"
-                            + todosText[index] +
+        todo.innerHTML =  "<span class='check " + objects[index].toDosText + "'><i class='fas fa-check'></i></span>"
+                            + objects[index].toDosText +
                             "<span class='trash fas fa-trash-alt'></span>";
 
         todo.querySelector(".check").addEventListener("click", function(): void {
@@ -79,7 +76,7 @@ function drawListToDOM(): void {
 }
 
 function updateCounter(): void {
-    counterDOMElement.innerHTML = todosText.length + " in total";
+    counterDOMElement.innerHTML = objects.length + " in total";
 }
 
 /**
@@ -89,8 +86,7 @@ function addTodo(): void {
    
     if (inputDOMElement.value != "") {
         
-        todosText.push(inputDOMElement.value);
-        todosChecked.push(false);
+        objects.unshift();
         
         inputDOMElement.value = "";
 
@@ -104,7 +100,7 @@ function addTodo(): void {
 function toggleCheckState(index: number): void {
 
    
-    todosChecked[index] = !todosChecked[index];
+    objects[index].todosChecked = !objects[index].todosChecked;
 
     drawListToDOM();
 }
@@ -114,9 +110,7 @@ function toggleCheckState(index: number): void {
  */
 function deleteTodo(index: number): void {
 
-    todosText.splice(index, 1);
-    todosChecked.splice(index, 1);
-    
+    objects.splice(index, 1);
 
     drawListToDOM();
 }
