@@ -5,7 +5,6 @@ let objects = [
     },
 ];
 let addButton = document.querySelector("#addButton");
-console.log(addButton);
 addButton.addEventListener("click", function () {
     var temp = { toDosText: inputDOMElement.value,
         todosChecked: false, };

@@ -1,0 +1,114 @@
+body {
+  background-color: rgb(208, 207, 204);
+}
+
+#ueberschrift {
+  display: flex;
+  justify-content: center;
+  color: black;
+  margin-top: 50px;
+  font-size: 70px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative; 
+  background-color: #fff;
+  color: #000;
+  height: 25px;
+  width: 25px;
+  border: 0;
+  cursor: pointer;     
+  outline: none;
+  border: 3px solid #dfdbd8;
+}
+
+input[type=checkbox]:checked::before {
+  position: absolute;
+  transform: rotate(40deg);
+  font-size: 20px;
+  left: 5px;
+  top: 0;
+  font-weight: 700;
+  content: '\02143';
+
+}
+
+input[type="text"],
+select {
+
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: -1px;
+  resize: vertical;
+  padding-left: 40px;
+  margin-left: 6px;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.addnewtask {
+  width: 320px;
+  height: 22px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 0px;
+  margin-top: 1px;
+  padding-left: 40px;
+  margin-left: 6px;
+  font-size: 15px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 450px;
+  box-shadow: 10px 10px 15px silver;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+
+div {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: -1px;
+  resize: vertical;
+  padding-left: 45px;
+  margin-left: 400px;
+}
+
+.eingabefeld {
+  border-radius: 5px;
+}
+
+.fa-trash-can {
+  position: absolute;
+  opacity: 0%;
+  font-size: 30px;
+  color:gray;
+  cursor: pointer;
+  left: 880px;
+}
+
+.fa-trash-can:hover {
+  cursor: pointer;
+  opacity: 80%;
+  color: black;
+}
+
+#counter {
+  display: flex;
+  justify-content: center;
+  color: rgb(161, 156, 156);
+  margin-top: -30px;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

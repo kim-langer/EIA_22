@@ -12,8 +12,6 @@ let objects: ToDo[] = [
 ];
 
 let addButton = document.querySelector("#addButton") as HTMLButtonElement
-console.log(addButton);
-
 addButton.addEventListener ("click", function (): void {
     var temp = { toDosText: inputDOMElement.value, 
     todosChecked: false,};
@@ -114,3 +112,4 @@ function deleteTodo(index: number): void {
 
     drawListToDOM();
 }
+
