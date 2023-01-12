@@ -15,6 +15,7 @@ let addButton = document.querySelector("#addButton") as HTMLButtonElement
 addButton.addEventListener ("click", function (): void {
     var temp = { toDosText: inputDOMElement.value, 
     todosChecked: false,};
+    if (inputDOMElement.value! = "")
     objects.unshift(temp);
 }
 ); 
@@ -47,14 +48,11 @@ function drawListToDOM(): void {
     // das ToDo-Array durchlaufen (iterieren) und Todo für Todo in den DOM schreiben
     for (let index: number = 0; index < objects.length; index++) {
 
-        /**
-         * Neues DIV-Element erstellen (würde auch mit innerHTML = "<div class='todo'></div>" gehen, 
-         * die Objekt-Instansierung ist aber übersichtlicher)
-         */
+    
         let todo: HTMLElement = document.createElement("div");
         todo.classList.add("todo");
 
-        todo.innerHTML =  "<span class='check " + objects[index].toDosText + "'><i class='fas fa-check'></i></span>"
+        todo.innerHTML =  "<span class='check " + objects[index].todosChecked + "'><i class='fas fa-check'></i></span>"
                             + objects[index].toDosText +
                             "<span class='trash fas fa-trash-alt'></span>";
 
